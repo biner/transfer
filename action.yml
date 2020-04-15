@@ -1,0 +1,22 @@
+name: 'Transfer'
+description: 'package action from    https://github.com/Mikubill/transfer '
+author: 'biner'
+inputs:
+  path:
+    description: 'A directory to store and save  by Transfer'
+    required: true
+  platform:
+    description: 'platform short name'
+    required: true
+  flags:
+    description: 'Flags'
+    required: false
+outputs:
+  transfer-uri:
+    description: 'the uri '
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  icon: 'archive'
+  color: 'gray-dark'
