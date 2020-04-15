@@ -12,7 +12,7 @@ inputs:
     description: 'Flags'
     required: false
 outputs:
-  transfer-uri:
+  uri:
     description: 'the uri '
 runs:
   using: 'docker'
