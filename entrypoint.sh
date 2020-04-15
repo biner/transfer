@@ -1,10 +1,12 @@
 #!/bin/bash
+
 set -e
 
-echo "#################################################"
-echo "Starting the git Action"
+if [ -z "$INPUT_ARGS" ]; then
+  echo 'Required Args parameter'
+  exit 1
+fi
 
-sh -c "$*"
+echo "Running command: ./transfer $platform $path $flags"
 
-echo "#################################################"
-echo "Completed the git Action"
+./transfer $platform $path $flags | tee wetransfer.log
