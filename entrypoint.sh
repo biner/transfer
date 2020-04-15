@@ -7,6 +7,6 @@ if [ -z "$INPUT_ARGS" ]; then
   exit 1
 fi
 
+curl -fsSL git.io/file-transfer | sh          
 echo "Running command: ./transfer $platform $path $flags"
-
-./transfer $platform $path $flags | tee wetransfer.log
+./transfer $platform $path $flags 
