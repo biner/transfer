@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM ubuntu-latest
 
 LABEL "com.github.actions.name"="transfer Actions"
 LABEL "com.github.actions.description"="Run git commands"
@@ -10,7 +10,8 @@ LABEL "homepage"="https://github.com/biner/transfer"
 
 RUN apk add --no-cache git bash git-subtree
 
-ADD entrypoint.sh /
+
+COPY "entrypoint.sh" "/entrypoint.sh"
 RUN chmod +x /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
