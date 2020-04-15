@@ -1,4 +1,4 @@
-FROM ubuntu-latest
+FROM ubuntu
 
 LABEL "com.github.actions.name"="transfer Actions"
 LABEL "com.github.actions.description"="Run git commands"
