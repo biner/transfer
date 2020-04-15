@@ -2,7 +2,5 @@
 
 set -e
 
-
-curl -fsSL git.io/file-transfer | sh          
-echo "Running command: ./transfer $platform $path $flags"
-./transfer $platform $path $flags 
+echo "Running command: ./transfer $INPUT_PLATFORM $INPUT_PATH $INPUT_FLAGS"
+./transfer $INPUT_PLATFORM $INPUT_PATH $INPUT_FLAGS
