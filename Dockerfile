@@ -1,4 +1,4 @@
-FROM alpine-curl
+FROM centos
 
 
 COPY "entrypoint.sh" "/entrypoint.sh"
