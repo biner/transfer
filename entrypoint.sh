@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e
+# set -e
 
 curl -sL https://git.io/file-transfer | sh 
 
